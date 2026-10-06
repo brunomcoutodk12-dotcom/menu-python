@@ -1,11 +1,18 @@
-print("=== MENU===")
-print("1 - Ver mensagem")
-print("0 -Sair")
+def mostrar_menu():
+    print("=== MENU===")
+    print("1 - Ver mensagem")
+    print("0 -Sair")
 
-opcao = input("escolha")
+def mostrar_menu():
+    print('Bem-vindo!')
+
+mostrar_menu()
+
+opcao = input("Escolha")
 
 if opcao == "1":
-    print("Bem-Vindo")
-
-    if opcao =="0":
-        print("Encerrando")
+    mostrar_mensagem()
+elif opcao == '0':
+    print("Encerrando...")
+else:
+    print('Opção inválida!')
